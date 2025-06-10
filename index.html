@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem Panha - Developer Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts: Poppins for headings, Open Sans for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Swiper.js CSS for image carousel in modal -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- LottieFiles Player for animated backgrounds -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">Panha Dev</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="sempanha.pdf" target="_blank" class="btn btn-outline resume-button">Resume <i class="fas fa-download"></i></a>
+                <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section (Hero) -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <!-- Lottie Animation for subtle background -->
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_mKkFmF.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            </div>
+            <div class="hero-content" data-animation="fade-in-up">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Sem Panha</h1>
+                <p class="typed-description"></p> <!-- Dynamic typing effect -->
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 data-animation="fade-in-up">About Me</h2>
+            <div class="about-content">
+                <div class="bio" data-animation="fade-in-right">
+                    
+                    <p>I’m a passionate and dedicated developer who enjoys turning ideas into impactful software. From building responsive web applications and creative interactive games to crafting efficient Windows desktop tools, I always focus on clean design, strong performance, and a smooth user experience.</p>
+                    <!-- <p>I believe great software should not only function well but also feel intuitive and enjoyable to use. I constantly challenge myself to learn and grow, keeping up with modern development trends and new technologies.</p> -->
+                    <p>Full-stack developer skilled in building modern web apps with Laravel, React.js, and Tailwind CSS, as well as developing interactive games and efficient Windows desktop applications. Passionate about creating meaningful, user-centered digital experiences across platforms.</p>
+                </div>
+                <img src="images/pic.png" alt="Your Profile Image" class="profile-image" data-animation="fade-in-left">
+            </div>
+            <h3 data-animation="fade-in-up">My Skills</h3>
+            <div class="skills-container" data-animation="fade-in-up">
+                <div class="skills-tabs">
+                    <button class="tab-button active" data-category="webdev">Web Development</button>
+                    <button class="tab-button" data-category="gamedev">Game Development</button>
+                    <button class="tab-button" data-category="windev">Windows Development</button>
+                    <button class="tab-button" data-category="tools">Tools & Others</button>
+                </div>
+                <div class="skills-content">
+                    <!-- Web Development Skills -->
+                    <div class="skills-category webdev active">
+                        <div class="skill-item" data-skill="HTML5">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="progress-bar"><div class="progress" data-progress="95"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="progress-bar"><div class="progress" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                            <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="Node">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="Sass">
+                            <i class="fab fa-sass"></i>
+                            <span>Sass</span>
+                            <div class="progress-bar"><div class="progress" data-progress="75"></div></div>
+                        </div>
+                    </div>
+                    <!-- Game Development Skills -->
+                    <div class="skills-category gamedev">
+                        <div class="skill-item" data-skill="Unity">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Unity3D</span>
+                            <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="C#">
+                            <i class="fas fa-code"></i>
+                            <span>C#</span>
+                            <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="Blender">
+                            <i class="fas fa-cube"></i>
+                            <span>Blender</span>
+                            <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="Game Design">
+                            <i class="fas fa-brain"></i>
+                            <span>Game Design</span>
+                            <div class="progress-bar"><div class="progress" data-progress="88"></div></div>
+                        </div>
+                    </div>
+                    <!-- Windows Development Skills -->
+                    <div class="skills-category windev">
+                        <div class="skill-item" data-skill="C++">
+                            <i class="fas fa-terminal"></i>
+                            <span>C++</span>
+                            <div class="progress-bar"><div class="progress" data-progress="78"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="C#Net">
+                            <i class="fas fa-desktop"></i>
+                            <span>C# (.NET)</span>
+                            <div class="progress-bar"><div class="progress" data-progress="82"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="WPF">
+                            <i class="fas fa-window-restore"></i>
+                            <span>WPF</span>
+                            <div class="progress-bar"><div class="progress" data-progress="75"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="UWP">
+                            <i class="fab fa-windows"></i>
+                            <span>UWP</span>
+                            <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+                        </div>
+                    </div>
+                    <!-- Tools & Others Skills -->
+                    <div class="skills-category tools">
+                        <div class="skill-item" data-skill="Git">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="progress-bar"><div class="progress" data-progress="65"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="SQL">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="Figma">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                            <div class="progress-bar"><div class="progress" data-progress="60"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2 data-animation="fade-in-up">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item left" data-animation="slide-in-left">
+                    <div class="timeline-content card glassmorphism">
+                        <h3>Game Developer</h3>
+                        <h4>Dreamslab. | Dec 2024 - Present</h4>
+                        <ul>
+                            <li>I developed an interactive game using the Godot engine, fully integrated with a Telegram Bot, allowing users to play directly within Telegram. The game supports TON coin wallet integration for crypto-based rewards and transactions.</li>
+                            <li>I implemented a daily reward system that encourages player retention and engagement, along with a shop feature where players can buy and upgrade items using in-game currency or TON.</li>
+                            <li>Player scores are automatically linked to their Telegram usernames and synced with PlayFab, which manages a global leaderboard in real-time. </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-animation="slide-in-right">
+                    <div class="timeline-content card glassmorphism">
+                        <h3>Web Designer</h3>
+                        <h4>Win Hay | Jan 2022 - Nov 2023</h4>
+                        <ul>
+                        <li>Designed and developed responsive, modern web interfaces using <strong>Tailwind CSS</strong> across multiple platforms including desktop, mobile, and tablets.</li>
+                        <li>Implemented consistent UI/UX designs focusing on accessibility, performance, and cross-browser compatibility.</li>
+                        <li>Collaborated closely with developers and product teams to translate design concepts into functional websites and applications.</li>
+                        <li>Maintained and updated design systems and style guides to ensure a cohesive brand experience.</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="timeline-item left" data-animation="slide-in-left">
+                    <div class="timeline-content card glassmorphism">
+                        <h3>Full Stack Developer</h3>
+                        <h4>Client | Jun 2022 - Jan 2023</h4>
+                        <ul>
+                            <li>Developed and maintained robust RESTful APIs using Laravel, enabling smooth integration with front-end systems.</li>
+                            <li>Built responsive front-end interfaces with HTML, CSS, JavaScript, and Vue.js, ensuring seamless user experiences.</li>
+                            <li>Designed and implemented secure authentication and authorization features using Laravel Sanctum and middleware.</li>
+                            <li>Ensured code quality and project stability through version control (Git) and rigorous debugging.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-animation="slide-in-right">
+                    <div class="timeline-content card glassmorphism">
+                        <h3>Stock Controller</h3>
+                        <h4>PTC Computer | Jan 2022 - Nov 2023</h4>
+                        <ul>
+                            <li>Managed and tracked inventory operations using the SAP ERP system, ensuring accurate stock levels across warehouses.</li>
+                            <li>Processed goods receipts (GR), goods issues (GI), and stock transfers in SAP, maintaining real-time inventory accuracy. </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Add more experience or education items as needed -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 data-animation="fade-in-up">My Projects</h2>
+            <div class="project-filters" data-animation="fade-in-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="game">Game Development</button>
+                <button class="filter-btn" data-filter="windows">Windows Development</button>
+            </div>
+            <div class="project-grid" data-animation="fade-in-up">
+                <!-- Windall Group -->
+                <div class="project-card card" data-category="web">
+                    <img src="images/winall.png" alt="E-commerce Platform">
+                    <div class="card-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Windallgroup is an e-commerce website I developed for a client, designed to showcase and sell personalized products. Users can browse through a variety of products, create accounts withO-auth integration (such as Google or Facebook login), and securely complete purchases using KHQR,a local QR code payment system.</p>
+                        <div class="technologies"><span>Laravel</span> <span>Ajax</span> <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>Hostinger Deployment</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://livedemo.com/ecommerce" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/yourusername/ecommerce" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-ecommerce">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Hyip Monitor-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/trading-hyips.png" alt="Hyip Monitor Platform">
+                    <div class="card-content">
+                        <h3>Hyip Monitor Platform</h3>
+                        <p>Developed a full-featured HYIP (High-Yield Investment Program) monitor platform that allows users to browse, rate, and track HYIP investment programs in real time. The system includes a public-facing frontend for users and a secured admin dashboard for internal management.</p>
+                        <div class="technologies"><span>Laravel</span><span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>Hostinger Deployment</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://livedemo.com/ecommerce" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/yourusername/ecommerce" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-hyip">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Invest Hyip-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/tradeforyou.png" alt="Hyip Monitor Platform">
+                    <div class="card-content">
+                        <h3>Invest Hyip Website Platform</h3>
+                        <p>Developed a professional HYIP (High-Yield Investment Program) investment platform using Laravel. The platform allows users to register, invest in predefined plans, and earn profits automatically. The system supports both automatic and manual deposits through popular payment gateways like Payeer, Perfect Money, and cryptocurrency wallets.</p>
+                        <div class="technologies"><span>Laravel</span><span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>Hostinger Deployment</span>
+                            <span>Payeer API</span>
+                            <span>Perfect Money API</span>
+                            <span>Blockchain/crypto API integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://livedemo.com/ecommerce" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/yourusername/ecommerce" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-invest-hyip">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---POS System-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/pizza.png" alt="POS Web System">
+                    <div class="card-content">
+                        <h3>POS Web System</h3>
+                        <p>
+                            Designed and developed a full-featured Point of Sale (POS) web application using React and Laravel. 
+                            The system includes real-time product management, sales tracking, secure user authentication, 
+                            and receipt generation. It supports multi-user roles (admin, cashier) and provides detailed 
+                            reporting features for sales and inventory. Ideal for small to medium-sized businesses to 
+                            efficiently manage daily transactions.
+                        </p>
+                        <div class="technologies">
+                            <span>React JS Vite</span>
+                            <span>Laravel API</span>
+                            <span>MySQL</span>
+                            <span>Tailwind CSS</span>
+                            <span>Axios</span>
+                            <span>PDF Invoice Generation</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://livedemo.com/ecommerce" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/yourusername/ecommerce" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-pos">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---U888-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/u888.png" alt="U888 Template">
+                    <div class="card-content">
+                        <h3>U888 Platform</h3>
+                        <p>A modern landing page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://u888-sempanha111s-projects.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/testnowpanha/U888" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-u888">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Hay88vn-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/hay88vn.png" alt="U888 Template">
+                    <div class="card-content">
+                        <h3>Hay88vn Platform</h3>
+                        <p>A modern landing page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://hay88vn.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/testnowpanha/hay88vn" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-hay88vn">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Galaxy6623-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/galaxy.png" alt="U888 Template">
+                    <div class="card-content">
+                        <h3>Galaxy6623 Platform</h3>
+                        <p>A modern landing page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://gallaxy-six.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/testnowpanha/gallaxy" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-galaxy">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Bong99-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/bong99.png" alt="Bong99 Template">
+                    <div class="card-content">
+                        <h3>Bong99 Platform</h3>
+                        <p>A modern Multiple page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://bong99-one.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/testnowpanha/bong99" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-bong99">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Bong99-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/88van.png" alt="Bong99 Template">
+                    <div class="card-content">
+                        <h3>88wanvin Platform</h3>
+                        <p>A modern Multiple page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://88vanwin.vercel.app/" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/testnowpanha/88vanwin" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-88van">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Bong99-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/v6bet.png" alt="V6Bet Template">
+                    <div class="card-content">
+                        <h3>V6Bet Platform</h3>
+                        <p>A modern Multiple page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://v6bet-cyan.vercel.app/" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/testnowpanha/v6bet" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-v6bet">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---HappyLuke-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/happyluke.png" alt="V6Bet Template">
+                    <div class="card-content">
+                        <h3>HappyLuke Platform</h3>
+                        <p>A modern Multiple page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://happyluke.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/testnowpanha/happyluke" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-happyluke">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Coin2Gate-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/coin2gate.png" alt="U888 Template">
+                    <div class="card-content">
+                        <h3>Coin2Gate Platform</h3>
+                        <p>A modern landing page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://coin2-gate-ten.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/sempanha111/Coin2Gate" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-coin2gate">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Coin Apex-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/coinapex.png" alt="U888 Template">
+                    <div class="card-content">
+                        <h3>CoinApex Platform</h3>
+                        <p>A modern landing page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://template1-ivory.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/sempanha111/template1" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-coinapex">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Coin Apex-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/coin.png" alt="CoinApex Template">
+                    <div class="card-content">
+                        <h3>CoinApex Platform</h3>
+                        <p>A modern landing page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://template2-eosin.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/sempanha111/template2" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-coin">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---Buy Coin-->
+                <div class="project-card card" data-category="web">
+                    <img src="images/buycoin.png" alt="CoinApex Template">
+                    <div class="card-content">
+                        <h3>CoinApex Platform</h3>
+                        <p>A modern landing page template designed for promotional content and banners. Built with a clean layout and responsive design to showcase online services or campaigns effectively.
+                        </p>
+                        <div class="technologies">
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://template3-rouge.vercel.app" target="_blank" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/sempanha111/template3" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="web-buycoin">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Game Project Card -->
+                <div class="project-card card" data-category="game">
+                    <img src="images/madmonkey.png" alt="Space Shooter Game">
+                    <div class="card-content">
+                        <h3>Mad Monkey</h3>
+                        <p>Mad Monkey is a fast-paced 2D arcade shooter built using the Godot Engine, designed for quick reflexes, competitive fun, and smooth Telegram integration. The game combines retro-style action with modern cloud features and a persistent player ecosystem.</p>
+                        <div class="technologies"><span>Godot</span> <span>Godot Script</span> <span>JavaScript</span></div>
+                        <div class="project-links">
+                            <a href="https://t.me/MadMonkey_game_bot" target="_blank" class="btn btn-small">Play Now</a>
+                            <!-- <a href="https://github.com/yourusername/galactic-defender" target="_blank" class="btn btn-small btn-secondary">GitHub</a> -->
+                            <button class="btn btn-small view-details-btn" data-project-id="game-madmonkey">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card card" data-category="game">
+                    <img src="images/shootingfish3.png" alt="Space Shooter Game">
+                    <div class="card-content">
+                        <h3>Shooting Fish</h3>
+                        <p>Shooting Fish is a fast-paced arcade-style 2D shooter game where players control a cannon to shoot various types of fish. The goal is to earn coins by shooting fish, with each fish type having different health and coin rewards. The game includes real-time interactions, animated fish behavior, net and coin effects, and dynamic difficulty as the game progresses.</p>
+                        <div class="technologies"><span>Unity</span> <span>C#</span></div>
+                        <div class="project-links">
+                            <a href="images/madmonkey.png" target="_blank" class="btn btn-small">Play Now</a>
+                            <a href="https://github.com/yourusername/galactic-defender" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="game-shooter">Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Windows Project Card -->
+                <div class="project-card card" data-category="windows">
+                    <img src="images/tools.png" alt="Desktop Inventory App">
+                    <div class="card-content">
+                        <h3>Tools Automations Manage Accounts and create Account</h3>
+                        <p>Desktop application for managing inventory, customers, and orders with a user-friendly interface.</p>
+                        <div class="technologies"><span>Python</span> <span>PyQty5</span> <span>Rest API</span></div>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/embed/YOUR_VIDEO_ID" target="_blank" class="btn btn-small">Video Demo</a>
+                            <a href="https://github.com/yourusername/inventory-app" target="_blank" class="btn btn-small btn-secondary">GitHub</a>
+                            <button class="btn btn-small view-details-btn" data-project-id="windows-tools">Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 data-animation="fade-in-up">Get In Touch</h2>
+            <div class="contact-container" data-animation="fade-in-up">
+                <form class="contact-form card glassmorphism" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="social-links-area">
+                    <h3>Find me on:</h3>
+                    <div class="social-links">
+                        <!-- <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+                        <a href="https://github.com/testnowpanha" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/sem_panha123" target="_blank" aria-label="Twitter"><i class="fab fa-telegram"></i></a>
+                        <!-- <a href="https://your.itch.io" target="_blank" aria-label="Itch.io"><i class="fas fa-gamepad"></i></a> -->
+                    </div>
+                    <p class="email-direct">Or email me directly at: <a href="mailto:youremail@example.com">sempanha@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="current-year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Modal (hidden by default, revealed by JS) -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glassmorphism">
+            <span class="close-button" aria-label="Close modal">×</span>
+            <h3 id="modal-title"></h3>
+            <div class="swiper-container" id="project-gallery">
+                <div class="swiper-wrapper">
+                    <!-- Images/Videos will be injected here by JS -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation (arrows) -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <p id="modal-description"></p>
+            <div class="modal-technologies" id="modal-technologies"></div>
+            <div class="project-links modal-links">
+                <a id="modal-live-demo" href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+                <a id="modal-github" href="#" target="_blank" class="btn btn-secondary">GitHub</a>
+                <a id="modal-additional-link" href="#" target="_blank" class="btn btn-outline" style="display: none;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" title="Go to top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Swiper.js JavaScript (placed before your custom script) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Your Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<script>
+
+</script>

@@ -279,7 +279,8 @@ document.addEventListener('DOMContentLoaded', () => {
             images: [
                 'images/trading-hyips1.png',
                 'images/trading-hyips2.png',
-                'images/trading-hyips3.png'
+                'images/trading-hyips3.png',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/suxF_zyv9Aw?si=N1MyWwpUVc4EYGr-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: 'Dashboard statistics: active HYIPs, user signups, recent reviews, and click tracking. Multi-language support and currency conversion API (optional). Cron jobs to auto-update HYIP statuses and check uptime or payment status via APIs or manual admin review.',
             technologies: ['Laravel', 'Ajax', 'MySQL', 'Bootstrap', 'Hostinger Deployment'],
@@ -313,6 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'images/pizza2.png',
                 'images/pizza3.png',
                 'images/pizza4.png',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: `
                 A modern Point of Sale (POS) web application built using React JS (Vite) for the frontend and Laravel API for the backend.

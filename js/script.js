@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     highlightActiveLink(); // Call on load to set initial active link based on scroll position
 
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault(); // Prevent default anchor link behavior
             const targetId = this.getAttribute('href').substring(1); // Get section ID from href
             const targetSection = document.getElementById(targetId);
@@ -265,10 +265,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'web-ecommerce': {
             title: 'E-commerce Platform',
             images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/zarBTvwGTaE?si=_lpNNfgZqKYyr55p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/winall1.png',
                 'images/winall2.png',
                 'images/winall3.png',
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/zarBTvwGTaE?si=_lpNNfgZqKYyr55p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: ', I built a product-selling web application using Laravel for the backend and Vue.js for the frontend. I developed a comprehensive product category system, enabling dynamic management of categories and subcategories, and implemented filtering functionality to enhance user experience. My work included building RESTful APIs for product listings, user roles, cart and order management, and integrating secure authentication with Laravel Sanctum. I also created an admin panel for managing inventory, pricing, and product images',
             technologies: ['Laravel', 'Ajax', 'MySQL', 'Bootstrap', 'Hostinger Deployment'],
@@ -277,10 +277,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'web-hyip': {
             title: 'Hyip Monitor Platform',
             images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/suxF_zyv9Aw?si=N1MyWwpUVc4EYGr-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/trading-hyips1.png',
                 'images/trading-hyips2.png',
                 'images/trading-hyips3.png',
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/suxF_zyv9Aw?si=N1MyWwpUVc4EYGr-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: 'Dashboard statistics: active HYIPs, user signups, recent reviews, and click tracking. Multi-language support and currency conversion API (optional). Cron jobs to auto-update HYIP statuses and check uptime or payment status via APIs or manual admin review.',
             technologies: ['Laravel', 'Ajax', 'MySQL', 'Bootstrap', 'Hostinger Deployment'],
@@ -305,16 +305,16 @@ document.addEventListener('DOMContentLoaded', () => {
             liveDemo: 'images/tradeforyou9.png', // Replace with actual live demo link
             github: '' // Replace with actual GitHub link
         },
-       'web-pos': {
+        'web-pos': {
             title: 'POS Web System',
             images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/pizza5.png',
                 'images/pizza6.png',
                 'images/pizza1.png',
                 'images/pizza2.png',
                 'images/pizza3.png',
                 'images/pizza4.png',
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: `
                 A modern Point of Sale (POS) web application built using React JS (Vite) for the frontend and Laravel API for the backend.
@@ -342,7 +342,109 @@ document.addEventListener('DOMContentLoaded', () => {
             liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
             github: '' // Optional: Insert your GitHub repo link if public
         },
-       'web-u888': {
+
+
+        'web-bg-remover': {
+            title: 'Background Remover',
+            images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                'images/bg-remover2.png',
+                'images/bg_remover1.png',
+            ],
+            description: `
+                Through this project, I gained experience working with image processing tools and third-party APIs, improved my frontend/backend integration skills, and focused on delivering a smooth user experience through responsive design and real-time previews.
+            `,
+            technologies: [
+                'Nuxt js',
+                'Tailwind CSS',
+                'Python',
+            ],
+        },
+
+        'web-image-upscaler': {
+            title: 'Image Upscaler',
+            images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                'images/image-upscaler1.png',
+                'images/image-upscaler2.png',
+                'images/image-upscaler3.png',
+            ],
+            description: `
+                This web-based Image Upscaler allows users to increase the resolution of their images without losing quality by using AI-based enhancement techniques. The backend, written in Python, handles the upscaling using advanced models or third-party APIs, while the frontend built with Nuxt.js and Tailwind CSS provides a clean and responsive interface. Users can select their preferred upscale level (2×, 4×), view real-time previews, and download the upscaled image in high quality. This project helped me strengthen my understanding of image processing, frontend-backend integration, and UX optimization.
+            `,
+            technologies: [
+                'Nuxt js',
+                'Tailwind CSS',
+                'Python',
+            ],
+        },
+
+
+        'web-tiktok-download': {
+            title: 'Tiktok downloader',
+            images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                'images/tiktok-download1.png',
+                'images/tiktok-download2.png',
+                'images/tiktok-download3.png',
+                'images/tiktok-download4.png',
+            ],
+            description: `
+                 The TikTok Downloader project is a tool that enables users to download videos from TikTok without the watermark, providing a cleaner version of the content for reuse or archiving. Users can paste a TikTok link, and the system fetches the video using backend Python logic—either through direct scraping or third-party APIs—then returns a downloadable MP4 file. The frontend is built with Nuxt.js and Tailwind CSS, designed to be mobile-friendly and fast. This project helped me explore web scraping, API integration, and user experience optimization while handling video processing efficiently on the backend.
+            `,
+            technologies: [
+                'Nuxt js',
+                'Tailwind CSS',
+                'Python',
+            ],
+        },
+
+        'web-facebook-download': {
+            title: 'Facebook downloader',
+            images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                'images/facebook-download1.png',
+                'images/facebook-download2.png',
+                'images/facebook-download3.png',
+                'images/facebook-download4.png',
+            ],
+            description: `
+                 This Facebook Video Downloader allows users to easily fetch and download videos from Facebook by entering a public video URL. The system is built with Python on the backend using "yt_dlp" or custom scraping logic to extract video links in both HD and SD quality. The frontend is developed using Nuxt.js and Tailwind CSS, designed for responsiveness and ease of use. This project gave me hands-on experience with video extraction, handling Facebook’s dynamic content structure, and building a seamless user interface that simplifies the download process without any third-party tools or browser plugins.
+            `,
+            technologies: [
+                'Nuxt js',
+                'Tailwind CSS',
+                'Python',
+            ],
+        },
+
+        
+        'web-youtube-download': {
+            title: 'Youtube downloader',
+            images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                'images/youtube-download1.png',
+                'images/youtube-download2.png',
+                'images/youtube-download3.png',
+                'images/youtube-download4.png',
+                'images/youtube-download5.png',
+                'images/youtube-download6.png',
+                'images/youtube-download7.png',
+            ],
+            description: `
+                  This YouTube Video Downloader lets users fetch and download videos or audio from YouTube by simply pasting the video URL. The backend is powered by Python and uses the powerful "pytubefix" library to extract direct video and audio streams, allowing users to choose resolution options (e.g., 360p, 720p, 1080p) or audio-only MP3 downloads. The frontend, developed using Nuxt.js and styled with Tailwind CSS, provides a responsive and fast interface for both desktop and mobile devices. This project gave me practical experience in working with video processing tools, command-line utilities like ffmpeg, API-style service architecture, and building a user-friendly download experience.
+            `,
+            technologies: [
+                'Nuxt js',
+                'Tailwind CSS',
+                'Python',
+            ],
+        },
+
+
+
+
+        'web-u888': {
             title: 'U888 Template',
             images: [
                 'images/u8881.png',
@@ -364,13 +466,13 @@ document.addEventListener('DOMContentLoaded', () => {
             github: '' // Optional: Insert your GitHub repo link if public
         },
         'web-hay88vn': {
-                title: 'Hay88vn Template',
-                images: [
-                    'images/hay88vn1.png',
-                    'images/hay88vn2.png',
-                    'images/hay88vn3.png',  
-                ],
-                description: `
+            title: 'Hay88vn Template',
+            images: [
+                'images/hay88vn1.png',
+                'images/hay88vn2.png',
+                'images/hay88vn3.png',
+            ],
+            description: `
                 A responsive and modern web design template created using Tailwind CSS, focused on clean UI/UX principles.
             The template includes pre-designed sections such as hero banners, feature grids, testimonials, pricing tables,
             and contact forms. Built with a mobile-first approach, it ensures seamless experience across all devices.
@@ -378,20 +480,20 @@ document.addEventListener('DOMContentLoaded', () => {
             Ideal for startups, portfolios, SaaS landing pages, and marketing websites. Easily customizable with utility-first
             Tailwind classes and reusable components. Designed with accessibility, performance, and scalability in mind.
                 `,
-                technologies: [
-                    'Tailwind CSS',
-                ],
-                liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
-                github: '' // Optional: Insert your GitHub repo link if public
-            },
+            technologies: [
+                'Tailwind CSS',
+            ],
+            liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
+            github: '' // Optional: Insert your GitHub repo link if public
+        },
         'web-galaxy': {
-                title: 'Galaxy6623 Template',
-                images: [
-                    'images/gallaxy1.png',
-                    'images/gallaxy2.png',
-                    'images/gallaxy3.png',  
-                ],
-                description: `
+            title: 'Galaxy6623 Template',
+            images: [
+                'images/gallaxy1.png',
+                'images/gallaxy2.png',
+                'images/gallaxy3.png',
+            ],
+            description: `
                 A responsive and modern web design template created using Tailwind CSS, focused on clean UI/UX principles.
             The template includes pre-designed sections such as hero banners, feature grids, testimonials, pricing tables,
             and contact forms. Built with a mobile-first approach, it ensures seamless experience across all devices.
@@ -399,20 +501,20 @@ document.addEventListener('DOMContentLoaded', () => {
             Ideal for startups, portfolios, SaaS landing pages, and marketing websites. Easily customizable with utility-first
             Tailwind classes and reusable components. Designed with accessibility, performance, and scalability in mind.
                 `,
-                technologies: [
-                    'Tailwind CSS',
-                ],
-                liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
-                github: '' // Optional: Insert your GitHub repo link if public
-            },
+            technologies: [
+                'Tailwind CSS',
+            ],
+            liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
+            github: '' // Optional: Insert your GitHub repo link if public
+        },
         'web-bong99': {
-                title: 'Bong99 Template',
-                images: [
-                    'images/bong991.png',
-                    'images/bong992.png',
-                    'images/bong99.png',  
-                ],
-                description: `
+            title: 'Bong99 Template',
+            images: [
+                'images/bong991.png',
+                'images/bong992.png',
+                'images/bong99.png',
+            ],
+            description: `
                 A responsive and modern web design template created using Tailwind CSS, focused on clean UI/UX principles.
             The template includes pre-designed sections such as hero banners, feature grids, testimonials, pricing tables,
             and contact forms. Built with a mobile-first approach, it ensures seamless experience across all devices.
@@ -420,20 +522,20 @@ document.addEventListener('DOMContentLoaded', () => {
             Ideal for startups, portfolios, SaaS landing pages, and marketing websites. Easily customizable with utility-first
             Tailwind classes and reusable components. Designed with accessibility, performance, and scalability in mind.
                 `,
-                technologies: [
-                    'Tailwind CSS',
-                ],
-                liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
-                github: '' // Optional: Insert your GitHub repo link if public
-            },
+            technologies: [
+                'Tailwind CSS',
+            ],
+            liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
+            github: '' // Optional: Insert your GitHub repo link if public
+        },
         'web-88van': {
-                title: '88Wanvin Template',
-                images: [
-                    'images/88van1.png',
-                    'images/88van2.png',
-                    'images/88van.png',  
-                ],
-                description: `
+            title: '88Wanvin Template',
+            images: [
+                'images/88van1.png',
+                'images/88van2.png',
+                'images/88van.png',
+            ],
+            description: `
                 A responsive and modern web design template created using Tailwind CSS, focused on clean UI/UX principles.
             The template includes pre-designed sections such as hero banners, feature grids, testimonials, pricing tables,
             and contact forms. Built with a mobile-first approach, it ensures seamless experience across all devices.
@@ -441,21 +543,21 @@ document.addEventListener('DOMContentLoaded', () => {
             Ideal for startups, portfolios, SaaS landing pages, and marketing websites. Easily customizable with utility-first
             Tailwind classes and reusable components. Designed with accessibility, performance, and scalability in mind.
                 `,
-                technologies: [
-                    'Tailwind CSS',
-                ],
-                liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
-                github: '' // Optional: Insert your GitHub repo link if public
-            },
+            technologies: [
+                'Tailwind CSS',
+            ],
+            liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
+            github: '' // Optional: Insert your GitHub repo link if public
+        },
         'web-v6bet': {
-                title: '88Wanvin Template',
-                images: [
-                    'images/v6bet.png',
-                    'images/v6bet2.png',
-                    'images/v6bet3.png',  
-                    'images/v6bet4.png',  
-                ],
-                description: `
+            title: '88Wanvin Template',
+            images: [
+                'images/v6bet.png',
+                'images/v6bet2.png',
+                'images/v6bet3.png',
+                'images/v6bet4.png',
+            ],
+            description: `
                 A responsive and modern web design template created using Tailwind CSS, focused on clean UI/UX principles.
             The template includes pre-designed sections such as hero banners, feature grids, testimonials, pricing tables,
             and contact forms. Built with a mobile-first approach, it ensures seamless experience across all devices.
@@ -463,22 +565,22 @@ document.addEventListener('DOMContentLoaded', () => {
             Ideal for startups, portfolios, SaaS landing pages, and marketing websites. Easily customizable with utility-first
             Tailwind classes and reusable components. Designed with accessibility, performance, and scalability in mind.
                 `,
-                technologies: [
-                    'Tailwind CSS',
-                ],
-                liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
-                github: '' // Optional: Insert your GitHub repo link if public
-            },
+            technologies: [
+                'Tailwind CSS',
+            ],
+            liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
+            github: '' // Optional: Insert your GitHub repo link if public
+        },
         'web-happyluke': {
-                title: 'Happyluke Template',
-                images: [
-                    'images/happyluke.png',
-                    'images/happyluke2.png',
-                    'images/happyluke3.png',  
-                    'images/happyluke4.png',  
-                    'images/happyluke5.png',  
-                ],
-                description: `
+            title: 'Happyluke Template',
+            images: [
+                'images/happyluke.png',
+                'images/happyluke2.png',
+                'images/happyluke3.png',
+                'images/happyluke4.png',
+                'images/happyluke5.png',
+            ],
+            description: `
                 A responsive and modern web design template created using Tailwind CSS, focused on clean UI/UX principles.
             The template includes pre-designed sections such as hero banners, feature grids, testimonials, pricing tables,
             and contact forms. Built with a mobile-first approach, it ensures seamless experience across all devices.
@@ -486,13 +588,13 @@ document.addEventListener('DOMContentLoaded', () => {
             Ideal for startups, portfolios, SaaS landing pages, and marketing websites. Easily customizable with utility-first
             Tailwind classes and reusable components. Designed with accessibility, performance, and scalability in mind.
                 `,
-                technologies: [
-                    'Tailwind CSS',
-                ],
-                liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
-                github: '' // Optional: Insert your GitHub repo link if public
-            },
-       'web-coin2gate': {
+            technologies: [
+                'Tailwind CSS',
+            ],
+            liveDemo: 'images/pizza5.png', // Replace with your actual live demo link, e.g., 'https://pos-demo.yoursite.com'
+            github: '' // Optional: Insert your GitHub repo link if public
+        },
+        'web-coin2gate': {
             title: 'U888 Template',
             images: [
                 'images/coin2gate1.png',
@@ -591,6 +693,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'game-madmonkey': {
             title: 'Mad Monkey',
             images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/G9tiMG29xc8?si=Ej0c7ygdGUnH5wjW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/madmonkey.png',
                 'images/madmonkey1.png',
                 'images/madmonkey2.png',
@@ -602,7 +705,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 'images/madmonkey8.png',
                 'images/madmonkey9.png',
                 'images/madmonkey10.png',
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/G9tiMG29xc8?si=Ej0c7ygdGUnH5wjW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: `Mad Monkey is a fast-paced, endless action arcade game developed in Godot and designed specifically for Telegram using WebGL. Players control a determined monkey who must defend the jungle from mischievous birds by launching a variety of fruits as weapons. The game combines reactive strategy and quick reflexes, with progression tied to enemy difficulty, unlockable fruit types, and real-time power-ups. Integrated with PlayFab for leaderboard, player data, and currency store.
 
@@ -624,23 +726,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     **Back-End Integration**:
                     • PlayFab is used for real-time leaderboards, cloud saves, and currency/store systems.
                     • The game runs inside Telegram via a bot using WebGL, with a lightweight and smooth interface.`,
-                        
-                        technologies: ['Godot', 'GDScript', 'JavaScript', 'Telegram Bot API', 'PlayFab'],
-                        liveDemo: 'https://t.me/MadMonkey_game_bot',
+
+            technologies: ['Godot', 'GDScript', 'JavaScript', 'Telegram Bot API', 'PlayFab'],
+            liveDemo: 'https://t.me/MadMonkey_game_bot',
         },
 
         'game-shooter': {
             title: 'Shooting Fish',
             images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/f88rt3eHFO8?si=-vdIgm8Cb3c0UGCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/shootingfish.png',
                 'images/shootingfish1.png',
                 'images/shootingfish2.png',
                 'images/shootingfish3.png',
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/f88rt3eHFO8?si=-vdIgm8Cb3c0UGCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: `Shooting Fish is a fast-paced arcade-style 2D shooter game where players control a cannon to shoot various types of fish. The goal is to earn coins by shooting fish, with each fish type having different health and coin rewards. The game includes real-time interactions, animated fish behavior, net and coin effects, and dynamic difficulty as the game progresses.`,
-            technologies: ['Godot', 'GDScript', 'JavaScript', 'Telegram Bot API', 'PlayFab'],
-            liveDemo: 'https://t.me/MadMonkey_game_bot',
+            technologies: ['Unity Engine', 'C#'],
         },
 
 
@@ -649,10 +750,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'windows-tools': {
             title: 'Tools Automations Manage Accounts and create Account',
             images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/nZxHxR82L3Q?si=D71i249Otyo2EYHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/tools.png',
                 'images/tools1.png',
                 'images/tools2.png',
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/nZxHxR82L3Q?si=D71i249Otyo2EYHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             ],
             description: 'A robust desktop application built using WPF (Windows Presentation Foundation) for efficient inventory, customer, and order management. Features a clean, modern UI, seamless data persistence with SQL Server, advanced search and filtering capabilities, and extensive reporting functions. Designed for business environments.',
             technologies: ['Python', 'PyQty5', 'Rest API'],
@@ -803,7 +904,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Basic Form Validation (Client-Side) ---
     const contactForm = document.querySelector('.contact-form');
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
         const nameInput = this.querySelector('#name');
         const emailInput = this.querySelector('#email');
         const messageInput = this.querySelector('#message');
@@ -827,15 +928,15 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             emailjs.init("JeS-NbGpaTs7Sqw3v"); // Replace with your actual Public Key
-            
+
             emailjs.sendForm("service_enbgjfq", "template_7d39eyv", this)
-              .then(() => {
-                alert("Email sent successfully!");
-                this.reset();
-              }, (error) => {
-                console.error("Failed to send email:", error);
-              });
-          
+                .then(() => {
+                    alert("Email sent successfully!");
+                    this.reset();
+                }, (error) => {
+                    console.error("Failed to send email:", error);
+                });
+
             // alert('Message sent successfully! I will get back to you soon.');
         }
     });

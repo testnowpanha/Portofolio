@@ -18,7 +18,7 @@
     --border-dark: #444466; /* Dark mode borders */
 
     /* Glassmorphism Variables */
-    --glass-background-light: rgba(255, 255, 255, 0.15); /* Slightly visible white */
+    --glass-background-light: rgba(209, 209, 209, 0.692); /* Slightly visible white */
     --glass-border-light: rgba(255, 255, 255, 0.3); /* Defined white border */
     --glass-shadow-light: rgba(0, 0, 0, 0.1); /* Subtle shadow */
 

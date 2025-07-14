@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'web-bg-remover': {
             title: 'Background Remover',
             images: [
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/ywbL5nd-WOI?si=htZPVRBwVRNQ20_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/bg-remover2.png',
                 'images/bg_remover1.png',
             ],
@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'web-image-upscaler': {
             title: 'Image Upscaler',
             images: [
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/mqEZ6YdEMDY?si=tGDGSSnmea-HzCLN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/image-upscaler1.png',
                 'images/image-upscaler2.png',
                 'images/image-upscaler3.png',
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'web-tiktok-download': {
             title: 'Tiktok downloader',
             images: [
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/IMI33xtihhQ?si=MN7wTYcnm1ZjxNfR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/tiktok-download1.png',
                 'images/tiktok-download2.png',
                 'images/tiktok-download3.png',
@@ -402,7 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'web-facebook-download': {
             title: 'Facebook downloader',
             images: [
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/QDNtGms1fOY?si=na4s95oa3K30zD8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/ol1-6ThMrRk?si=ZdRN2buV102rIiIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 'images/facebook-download1.png',
                 'images/facebook-download2.png',
                 'images/facebook-download3.png',

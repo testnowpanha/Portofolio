@@ -38,8 +38,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="sempanha.pdf" target="_blank" class="btn btn-outline resume-button">Resume <i
-                        class="fas fa-download"></i></a>
+                <!-- <a href="sempanha.pdf" target="_blank" class="btn btn-outline resume-button">Resume <i
+                        class="fas fa-download"></i></a> -->
                 <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark/light mode">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -82,8 +82,7 @@
                         Windows desktop tools, I always focus on clean design, strong performance, and a smooth user
                         experience.</p>
                     <!-- <p>I believe great software should not only function well but also feel intuitive and enjoyable to use. I constantly challenge myself to learn and grow, keeping up with modern development trends and new technologies.</p> -->
-                    <p>Full-stack developer skilled in building modern web apps with Laravel, React.js, and Tailwind
-                        CSS, as well as developing interactive games and efficient Windows desktop applications.
+                    <p>Full-stack developer skilled in building Technologie as well as developing interactive games and efficient Windows desktop applications.
                         Passionate about creating meaningful, user-centered digital experiences across platforms.</p>
                 </div>
                 <img src="images/pic.png" alt="Your Profile Image" class="profile-image" data-animation="fade-in-left">
@@ -362,13 +361,71 @@
             <h2 data-animation="fade-in-up">My Projects</h2>
             <div class="project-filters" data-animation="fade-in-up">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
                 <button class="filter-btn" data-filter="game">Game Development</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
                 <button class="filter-btn" data-filter="windows">Windows Development</button>
             </div>
 
 
             <div class="project-grid" data-animation="fade-in-up">
+                
+                <!-- Game Project Card -->
+                <div class="project-card card" data-category="game">
+                    <img src="images/madmonkey.png" alt="Space Shooter Game">
+                    <div class="card-content">
+                        <h3>Mad Monkey</h3>
+                        <p>Mad Monkey is a fast-paced 2D arcade shooter built using the Godot Engine, designed for quick
+                            reflexes, competitive fun, and smooth Telegram integration. The game combines retro-style
+                            action with modern cloud features and a persistent player ecosystem.</p>
+                        <div class="technologies"><span>Godot</span> <span>Godot Script</span> <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="https://t.me/MadMonkey_game_bot" target="_blank" class="btn btn-small">Play Now</a> -->
+                            <!-- <a href="https://github.com/yourusername/galactic-defender" target="_blank" class="btn btn-small btn-secondary">GitHub</a> -->
+                            <button class="btn btn-small view-details-btn"
+                                data-project-id="game-madmonkey">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card" data-category="game">
+                    <img src="images/klaklok1.png" alt="Kla klok Khmer">
+                    <div class="card-content">
+                        <h3>Kla Klok Khmer Game </h3>
+                        <p>
+                            Kla Klok is a polished mobile simulation of the classic Khmer dice game, built from the ground up in Unity. 
+                            Players bet on six traditional symbols, anticipating the outcome of three dice shaken under a dish. The project showcases a complete game loop written in C#,
+                        </p>
+                        <div class="technologies"><span>Unity</span> <span>C#</span></div>
+                        <div class="project-links">
+                            <a href="https://youtu.be/fkq2_60BfDo?si=ihMiYuXCqDlx7wlw" target="_blank" class="btn btn-small">Video Demo</a>
+                            <!-- <a href="https://github.com/yourusername/galactic-defender" target="_blank" class="btn btn-small btn-secondary">GitHub</a> -->
+                            <button class="btn btn-small view-details-btn"
+                                data-project-id="game-klaklok">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card card" data-category="game">
+                    <img src="images/shootingfish3.png" alt="Space Shooter Game">
+                    <div class="card-content">
+                        <h3>Shooting Fish</h3>
+                        <p>Shooting Fish is a fast-paced arcade-style 2D shooter game where players control a cannon to
+                            shoot various types of fish. The goal is to earn coins by shooting fish, with each fish type
+                            having different health and coin rewards. The game includes real-time interactions, animated
+                            fish behavior, net and coin effects, and dynamic difficulty as the game progresses.</p>
+                        <div class="technologies"><span>Unity</span> <span>C#</span></div>
+                        <div class="project-links">
+                            <!-- <a href="images/madmonkey.png" target="_blank" class="btn btn-small">Play Now</a> -->
+                            <!-- <a href="https://github.com/yourusername/galactic-defender" target="_blank" class="btn btn-small btn-secondary">GitHub</a> -->
+                            <button class="btn btn-small view-details-btn"
+                                data-project-id="game-shooter">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Windall Group -->
                 <div class="project-card card" data-category="web">
                     <img src="images/winall.png" alt="E-commerce Platform">
@@ -854,43 +911,6 @@
                     </div>
                 </div>
 
-                <!-- Game Project Card -->
-                <div class="project-card card" data-category="game">
-                    <img src="images/madmonkey.png" alt="Space Shooter Game">
-                    <div class="card-content">
-                        <h3>Mad Monkey</h3>
-                        <p>Mad Monkey is a fast-paced 2D arcade shooter built using the Godot Engine, designed for quick
-                            reflexes, competitive fun, and smooth Telegram integration. The game combines retro-style
-                            action with modern cloud features and a persistent player ecosystem.</p>
-                        <div class="technologies"><span>Godot</span> <span>Godot Script</span> <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <!-- <a href="https://t.me/MadMonkey_game_bot" target="_blank" class="btn btn-small">Play Now</a> -->
-                            <!-- <a href="https://github.com/yourusername/galactic-defender" target="_blank" class="btn btn-small btn-secondary">GitHub</a> -->
-                            <button class="btn btn-small view-details-btn"
-                                data-project-id="game-madmonkey">Details</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="project-card card" data-category="game">
-                    <img src="images/shootingfish3.png" alt="Space Shooter Game">
-                    <div class="card-content">
-                        <h3>Shooting Fish</h3>
-                        <p>Shooting Fish is a fast-paced arcade-style 2D shooter game where players control a cannon to
-                            shoot various types of fish. The goal is to earn coins by shooting fish, with each fish type
-                            having different health and coin rewards. The game includes real-time interactions, animated
-                            fish behavior, net and coin effects, and dynamic difficulty as the game progresses.</p>
-                        <div class="technologies"><span>Unity</span> <span>C#</span></div>
-                        <div class="project-links">
-                            <!-- <a href="images/madmonkey.png" target="_blank" class="btn btn-small">Play Now</a> -->
-                            <!-- <a href="https://github.com/yourusername/galactic-defender" target="_blank" class="btn btn-small btn-secondary">GitHub</a> -->
-                            <button class="btn btn-small view-details-btn"
-                                data-project-id="game-shooter">Details</button>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Windows Project Card -->
                 <div class="project-card card" data-category="windows">

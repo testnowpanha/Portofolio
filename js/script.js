@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedDescription = document.querySelector('.typed-description');
     // Phrases for the typing effect - customize these!
     const phrases = [
-        "a Web Developer.",
         "a Game Developer.",
+        "a Web Developer.",
         "a Windows Developer.",
         "a Problem Solver.",
         "a Creator."
@@ -739,6 +739,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 'images/shootingfish1.png',
                 'images/shootingfish2.png',
                 'images/shootingfish3.png',
+            ],
+            description: `Shooting Fish is a fast-paced arcade-style 2D shooter game where players control a cannon to shoot various types of fish. The goal is to earn coins by shooting fish, with each fish type having different health and coin rewards. The game includes real-time interactions, animated fish behavior, net and coin effects, and dynamic difficulty as the game progresses.`,
+            technologies: ['Unity Engine', 'C#'],
+        },
+        'game-klaklok': {
+            title: 'Shooting Fish',
+            images: [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/fkq2_60BfDo?si=YpXGCLBW0Y_Micml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+                'images/klaklok1.png',
             ],
             description: `Shooting Fish is a fast-paced arcade-style 2D shooter game where players control a cannon to shoot various types of fish. The goal is to earn coins by shooting fish, with each fish type having different health and coin rewards. The game includes real-time interactions, animated fish behavior, net and coin effects, and dynamic difficulty as the game progresses.`,
             technologies: ['Unity Engine', 'C#'],

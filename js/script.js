@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollToTopBtn = document.getElementById('scroll-to-top');
 
     // --- Preloader Logic ---
-    window.addEventListener('load', () => {
-        const preloader = document.getElementById('preloader');
-        preloader.classList.add('hide-preloader');
-        setTimeout(() => {
-            preloader.remove(); // Remove preloader from DOM after transition
-        }, 500); // Matches CSS transition duration
-    });
+    // window.addEventListener('load', () => {
+    //     const preloader = document.getElementById('preloader');
+    //     preloader.classList.add('hide-preloader');
+    //     setTimeout(() => {
+    //         preloader.remove(); // Remove preloader from DOM after transition
+    //     }, 500); // Matches CSS transition duration
+    // });
 
     // --- Set Current Year in Footer ---
     document.getElementById('current-year').textContent = new Date().getFullYear();
